@@ -1,4 +1,5 @@
 from colorama import Back , init
+import random
 init()
 print(Back.BLUE + """
 ________$$$$
@@ -40,6 +41,13 @@ if num_prog == "3":
     third_prog = input_list[0] + input_list[4] + input_list[1] + input_list[4] + input_list[2] + input_list[4] + input_list[3] + input_list[4] + input_list[4]
     print(third_prog)
 if num_prog == "4":
-    print("Поки не працює")
+    pass
 if num_prog == "5":
-    print("Поки не працює")
+    f_list = ['б' , 'з' , 'ф']
+    fint = random.randint(0 ,2)
+    if fint == "2":
+        pntf = input_list[4] + input_list[3] * 3 + f_list[2] * 2
+        print(pntf)
+    else:
+        pntrf = input_list[1] + input_list[4] * 2 + f_list[2] * 5
+        print(pntrf)
